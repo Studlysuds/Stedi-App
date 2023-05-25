@@ -6,7 +6,7 @@ app.get("/", (req, res)=> {
 })
 
 app.get("/", (req, res)=> {
-
+    res.setHeader('content-type', 'text/plain');
     res.send("Welcome to my backend API!");
 })
 
